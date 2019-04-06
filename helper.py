@@ -5,7 +5,8 @@ import torch
 #funtion to process the image to be entered 
 def process_image(image):
     ''' Scales, crops, and normalizes a PIL image for a PyTorch model,
-        returns an Numpy array
+        input:image file
+        output: an Numpy array
     '''
     im = Image.open(image)
     im = im.resize((256,256))
